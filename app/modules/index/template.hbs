@@ -3,8 +3,8 @@
 {{#users-section model tagName="section" class="card" as |user api|}}
      {{users-section.header-section currentUser=api.currentUser tagName="header" class="card-header"  }}
      <div class="grid">
-         {{users-section.user-list-section api=api tagName="ul" class="cell -4of12" locale-class="user-list"}}
-         {{users-section.user-detail-section currentUser=api.currentUser class="cell -8of12"}}
+         {{users-section.user-list-section api }}
+         {{users-section.user-detail-section currentUser}}
      </div>
 {{/users-section}}
 <hr>
