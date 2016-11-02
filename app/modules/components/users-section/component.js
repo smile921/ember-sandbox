@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import set from 'ember-metal/set'
+import set from 'ember-metal/set';
 
 export default Ember.Component.extend({
     currentUser: null,
