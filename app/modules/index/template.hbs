@@ -1,10 +1,10 @@
 
 <h2>在父子组件之间传递状态</h2>
-{{#users-section model as |user api|}}
-     {{users-section.header-section}}
+{{#users-section model tagName="section" class="card" as |user api|}}
+     {{users-section.header-section tagName="header" class="card-header"  }}
      <div class="grid">
-         {{users-section.user-list-section}}
-         {{users-section.user-detail-section}}
+         {{users-section.user-list-section tagName="ul" class="cell -4of12" locale-class="user-list"}}
+         {{users-section.user-detail-section class="cell -8of12"}}
      </div>
 {{/users-section}}
 <hr>
