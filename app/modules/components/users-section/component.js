@@ -2,6 +2,8 @@ import Ember from 'ember';
 import set from 'ember-metal/set';
 
 export default Ember.Component.extend({
+    tagName:'section',
+    classNames:['card'],
     currentUser: null,
     actions: {
         selectUser(user) {
