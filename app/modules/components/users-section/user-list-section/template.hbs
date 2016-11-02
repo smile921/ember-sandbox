@@ -4,5 +4,5 @@
         </button>
       {{/if}}
       {{#each api.users as |user|}}
-        <li local-class="user-item" onclick={{api.selectUser user}}>{{user.login}}</li>
+        <li local-class="user-item" onclick={{action api.selectUser user}}>{{user.login}}</li>
       {{/each}}
