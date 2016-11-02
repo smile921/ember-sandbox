@@ -13,5 +13,5 @@ export default Ember.Component.extend({
         }
     }
 
-}).reopenClass({positionParams:["users"]});
+}).reopenClass({positionalParams:["users"]});
 
