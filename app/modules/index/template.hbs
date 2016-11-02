@@ -1,5 +1,15 @@
-<h2>在父子组件之间传递状态</h2>
 
+<h2>在父子组件之间传递状态</h2>
+{{#users-section model as |user api|}}
+     {{users-section.header-section}}
+     <div class="grid">
+         {{users-section.user-list-section}}
+         {{users-section.user-detail-section}}
+     </div>
+{{/users-section}}
+<hr>
+
+<h2>在父子组件之间传递状态</h2>
 <section class="card">{{!-- 1 --}}
   <header class="card-header">{{!-- 1.1 --}}
     用户列表{{if selectedUser (concat " - " selectedUser.login)}}

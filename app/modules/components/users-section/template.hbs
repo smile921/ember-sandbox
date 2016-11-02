@@ -1,1 +1,8 @@
-{{yield}}
+{{yield(hash
+    header = (component "users-section/header-section")
+  list = (component "users-section/user-list-section")
+  detail = (component "users-section/user-detail-section")
+  )(hash
+  currentUser=currentUser
+  users=users
+  )}}
