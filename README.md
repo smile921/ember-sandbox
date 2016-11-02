@@ -58,3 +58,23 @@
 - 练习：无
 - 视频：[Youtube](https://www.youtube.com/watch?v=Z6N1HyhEPKo) | [哔哩哔哩](http://www.bilibili.com/video/av6452647)
 </details>
+
+<details>
+    <summary>第 3 期：在父子组件之间传递状态</summary>
+
+- 练习：
+    - 题目：[分支 003-begin](https://github.com/very-geek/ember-sandbox/tree/003/begin)
+    - 答案：[分支 003-final](https://github.com/very-geek/ember-sandbox/tree/003/final)
+- 视频：
+    - 介绍：[Youtube](https://www.youtube.com/watch?v=AISmLOsWcfY) | [哔哩哔哩](http://www.bilibili.com/video/av6454526)
+    - 总结：
+        1. 数据绑定专题：[Youtube](https://www.youtube.com/watch?v=KMLsOpzg2hg) | [哔哩哔哩](http://www.bilibili.com/video/av6584546)
+        2. [Youtube](https://www.youtube.com/watch?v=29tlYVE3mqo) | [哔哩哔哩](http://www.bilibili.com/video/av6629356)
+</details>
+
+<details>
+    <summary>【番外篇】：如何实现 Github API OAuth2 鉴权</summary>
+
+- 练习：无
+- 视频：[Youtube](https://www.youtube.com/watch?v=doglVsRI2-w) | [哔哩哔哩](http://www.bilibili.com/video/av6478153)
+</details>
