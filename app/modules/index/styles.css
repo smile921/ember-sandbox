@@ -6,11 +6,18 @@
   list-style: none;
 }
 
+:global(.standard) .user-ul {
+    width:100%;
+    font-size:0px;
+}
 :global(.standard) .user-item {
   cursor: pointer;
   padding: .75rem 1rem;
   transform: translateZ(0);
   transition: all .3s ease-in-back;
+  display:inline-block;
+  width:50%;
+  font-size:14px;
 
   &:hover, &:focus {
     background-color: color(ui-gray a(16%));

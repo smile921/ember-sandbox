@@ -5,6 +5,6 @@ export default Route.extend({
   ajax: inject(),
 
   model() {
-    return this.get('ajax').request('//api.github.com/users');
+    return this.get('ajax').request('/users');
   }
 });
