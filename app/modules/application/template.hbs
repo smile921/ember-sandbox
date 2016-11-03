@@ -4,6 +4,12 @@
   {{back-to-index currentRouteName}}
 </header>
 
+<div class="container">
+    <button type="button"> 显示菜单 </button>
+    <button type="button" disabled> 隐藏菜单 </button>
+    <button type="button"> 切换菜单 </button>
+
+</div>
 <hr>
 
 <main class="container" role="main">
@@ -21,6 +27,14 @@
   {{/if}}
 
 </main>
+<div class="container">
+    <button type="button" > 随处切换菜单</button>
+</div>
 <main class="container" >
 {{outlet}}
 </main>
+
+<nav local-class="nav-area">
+    导航菜单
+    <button type="button" >隐藏自己</button>
+</nav>
