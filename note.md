@@ -6,3 +6,5 @@
 * emberjs.com/learn 最近上线的教程资料收集
 
 * clientid d940a86ec8ad882acbc1
+
+*  Ember Inspector  tool for debugging ember application 
