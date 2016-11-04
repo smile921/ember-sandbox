@@ -1,24 +1,24 @@
 import Route from 'ember-route';
 import inject from 'ember-service/inject';
+import {isNone} from 'ember-utils';
+import get from 'ember-metal/get';
+import set from 'ember-metal/set';
+
 
 export default Route.extend({
   ajax: inject(),
 
-  beforeModel(transition) {
-    const ajax = this.get('ajax');
-    ajax.host = 'https://api.github.com';
-
-    this.remindAuth = null;
-    const token = window.localStorage.getItem('github_api_oauth_token');
-
-    if (token) {
-      ajax.headers['Authorization'] = `token ${token}`;
-    } else {
-      this.remindAuth = '别忘了先做 OAuth 鉴权哦，否则每小时只能请求 60 次呢～';
+     setupController(controller) {
+         this._super(controller);
+         //debugger;
+         if(isNone(get(this, 'ajax.headers.Authorization'))){
+             controller.set('remindAuth', '别忘了做鉴权哦，否则每小时只能请求69次 呢 ~');
+         }
+     },
+    renderTemplate(controller, model){
+        //debugger;
+        this._super(controller,model);
+        this.render('application/navgate',{into:'application',outlet:'navgate'});
     }
-  },
 
-  setupController(controller) {
-    controller.set('remindAuth', this.remindAuth);
-  }
 });

@@ -1,4 +1,4 @@
-:global(.standard) .nav-area {
+:global(.standard) .nav-menu {
     position:absolute;
     top:0;
     right:auto;
@@ -7,4 +7,21 @@
     width:20vw;
     background-color:#fff;
     box-shadow:1px 0 10px 0 rgba(0,0,0,0.2);
+    transform:translateX(-100%);
+    transition:tranform 0.25s ;
+}
+
+.nav-menu {
+    position:absolute;
+    top:0;
+    right:auto;
+    bottom:0;
+    left:0;
+    width:20vw;
+    background-color:#fff;
+    box-shadow:1px 0 10px 0 rgba(0,0,0,0.2);
+    transition:tranform 0.25s ;
+}
+.show {
+    transform:translateX(-100%);
 }

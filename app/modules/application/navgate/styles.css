@@ -1,0 +1,13 @@
+:global(.standard) .nav-menu{
+    position:absoute;
+    top:0;
+    right:auto;
+    left:0;
+    width:20vw;
+    background-color:#fff;
+    box-shadow:1px 0 10px 0 rgba(0,0,0,0.2);
+    transition:tranform 0.25s ;
+}
+:global(.standard) .show{
+    transform:translateX(-100%);
+}

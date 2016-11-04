@@ -5,12 +5,13 @@
 </header>
 
 <div class="container">
-    <button type="button"> 显示菜单 </button>
-    <button type="button" disabled> 隐藏菜单 </button>
+    <button type="button" onclick={{action navgate.show navgate}} disabled={{isShow}}> 显示菜单 </button>
+    <button type="button" disabled={{ isShow }}> 隐藏菜单 </button>
     <button type="button"> 切换菜单 </button>
 
 </div>
 <hr>
+
 
 <main class="container" role="main">
   {{#if remindAuth}}
@@ -19,22 +20,13 @@
         <strong>{{remindAuth}}</strong>
 
         <a href="https://github.com/login/oauth/authorize?client_id=93fe8b9a14b53e85c248" class="btn btn-info">
-          <img src="/assets/images/github-light-32.png">
-          <strong>Authenticate with Github API</strong>
+          <img src="/assets/images/github-light-32.png"> <strong>Authenticate with Github API</strong>
         </a>
       </div>
     </section>
   {{/if}}
 
-</main>
-<div class="container">
-    <button type="button" > 随处切换菜单</button>
-</div>
-<main class="container" >
-{{outlet}}
-</main>
+  {{outlet}}
+</main> 
 
-<nav local-class="nav-area">
-    导航菜单
-    <button type="button" >隐藏自己</button>
-</nav>
+{{outlet "navgate"}}
