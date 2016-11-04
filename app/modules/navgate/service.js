@@ -8,9 +8,11 @@ import styles from '../application/styles';
 export default Ember.Service.extend({
     isShow:false,
     navClassName:computed('isShow', function(){
-        const baseClassName = get(styles,'nav-menu');
+        //let baseClassName = get(styles,'nav-menu');
+        let baseClassName = styles.nav_menu;
+        const isShow = get(this,'isShow');
         return get(this, 'isShow')
-            ? `${baseCalssName} get(styles,'isShow')` : baseCalssName ;
+            ? `${baseClassName} get(styles,'isShow')` : baseClassName ;
     }),
         show(context){
             debugger;

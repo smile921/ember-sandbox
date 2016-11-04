@@ -11,7 +11,7 @@
     transition:tranform 0.25s ;
 }
 
-.nav-menu {
+.nav_menu {
     position:absolute;
     top:0;
     right:auto;
@@ -22,6 +22,6 @@
     box-shadow:1px 0 10px 0 rgba(0,0,0,0.2);
     transition:tranform 0.25s ;
 }
-.show {
+.isShow {
     transform:translateX(-100%);
 }
