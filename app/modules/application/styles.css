@@ -21,7 +21,8 @@
     background-color:#fff;
     box-shadow:1px 0 10px 0 rgba(0,0,0,0.2);
     transition:tranform 0.25s ;
-}
-.isShow {
-    transform:translateX(-100%);
+
+    &.isShow {
+           transform:translateX(-100%);
+    }
 }

@@ -12,14 +12,13 @@ export default Ember.Service.extend({
         let baseClassName = styles.nav_menu;
         const isShow = get(this,'isShow');
         return get(this, 'isShow')
-            ? `${baseClassName} get(styles,'isShow')` : baseClassName ;
+            ? `${baseClassName} ${styles.isShow}` : baseClassName ;
     }),
         show(context){
-            debugger;
-            set( context||this,'isShow',true);
+            set( context||this,'isShow',false);
         },
         hide(context){
-            set(context||this, 'isShow', false);
+            set(context||this, 'isShow', true);
         },
         toggle(context){
             if(context) context.toggleProperty('isShow');
