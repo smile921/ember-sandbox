@@ -3,6 +3,8 @@ import inject from 'ember-service/inject';
 import {isNone} from 'ember-utils';
 import get from 'ember-metal/get';
 import set from 'ember-metal/set';
+import {reads} from 'ember-computed';
+import {setProperties} from 'ember-metal/set';
 
 
 export default Route.extend({
@@ -14,6 +16,11 @@ export default Route.extend({
          if(isNone(get(this, 'ajax.headers.Authorization'))){
              controller.set('remindAuth', '别忘了做鉴权哦，否则每小时只能请求69次 呢 ~');
          }
+
+         setProperties(controller, {
+             isShow: reads('navgate.isShow'),
+             navClassName:reads('navgate.navClassName') 
+         });
      },
     renderTemplate(controller, model){
         //debugger;
