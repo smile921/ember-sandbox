@@ -10,7 +10,7 @@ export default Ember.Service.extend({
     navClassName:computed('isShow', function(){
         const baseClassName = get(styles,'nav-menu');
         return get(this, 'isShow')
-            ? `${baseCalssName} get(styles,'show')` : baseCalssName ;
+            ? `${baseCalssName} get(styles,'isShow')` : baseCalssName ;
     }),
         show(context){
             debugger;
